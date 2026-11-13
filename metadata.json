@@ -1,0 +1,6 @@
+{
+  "name": "CamFinder",
+  "description": "Herramienta personal de transmisión de vídeo y audio ambiental por red local para Android y Windows con descubrimiento ONVIF, RTSP y WebRTC.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

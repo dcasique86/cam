@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CamFinder</string>
+    <string name="connecting">Conectando con cámara...</string>
+    <string name="reconnecting">Reconectando con cámara...</string>
+    <string name="connected">En Directo</string>
+    <string name="ambient_audio">Audio Ambiental</string>
+    <string name="mute">Silenciar</string>
+    <string name="unmute">Activar Audio</string>
+    <string name="select_camera">Seleccionar Sensor</string>
+    <string name="devices">Dispositivos</string>
+    <string name="scan">Buscar Cámaras</string>
+</resources>

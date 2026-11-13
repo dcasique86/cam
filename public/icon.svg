@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="50%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+    <linearGradient id="lens" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="104" fill="url(#bg)" />
+
+  <!-- Outer radar / signal ring -->
+  <circle cx="256" cy="256" r="190" fill="none" stroke="#3b82f6" stroke-width="3" stroke-dasharray="8 12" opacity="0.3" />
+  <circle cx="256" cy="256" r="160" fill="none" stroke="#06b6d4" stroke-width="2" opacity="0.4" />
+
+  <!-- Camera Outer Ring -->
+  <circle cx="256" cy="256" r="128" fill="url(#lens)" stroke="url(#accent)" stroke-width="7" filter="url(#glow)" />
+
+  <!-- Inner aperture / lens -->
+  <circle cx="256" cy="256" r="88" fill="#090d16" stroke="#06b6d4" stroke-width="3" />
+  <circle cx="256" cy="256" r="54" fill="url(#accent)" opacity="0.9" />
+
+  <!-- Lens reflection highlight -->
+  <circle cx="238" cy="238" r="18" fill="#ffffff" opacity="0.75" />
+  <circle cx="270" cy="270" r="7" fill="#ffffff" opacity="0.45" />
+
+  <!-- Wi-Fi / RTSP discovery waves at top right -->
+  <path d="M 330 150 A 60 60 0 0 1 390 210" fill="none" stroke="#06b6d4" stroke-width="6" stroke-linecap="round" />
+  <path d="M 350 170 A 30 30 0 0 1 380 200" fill="none" stroke="#38bdf8" stroke-width="5" stroke-linecap="round" />
+
+  <!-- Audio equalizer bars at bottom center -->
+  <rect x="208" y="400" width="8" height="24" rx="4" fill="#06b6d4" />
+  <rect x="224" y="386" width="8" height="38" rx="4" fill="#38bdf8" />
+  <rect x="240" y="374" width="8" height="50" rx="4" fill="#60a5fa" />
+  <rect x="256" y="364" width="8" height="60" rx="4" fill="#3b82f6" />
+  <rect x="272" y="374" width="8" height="50" rx="4" fill="#60a5fa" />
+  <rect x="288" y="386" width="8" height="38" rx="4" fill="#38bdf8" />
+  <rect x="304" y="400" width="8" height="24" rx="4" fill="#06b6d4" />
+</svg>
